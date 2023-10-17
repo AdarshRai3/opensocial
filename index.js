@@ -5,6 +5,8 @@ const expressLayouts = require('express-ejs-layouts');
 
 app.use(expressLayouts);
 
+app.use(express.static('./assets'));
+
 // use express router
 app.use('/', require('./routes'));
 
